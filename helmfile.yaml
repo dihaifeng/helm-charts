@@ -1,9 +1,0 @@
----
-repositories:
-  - name: helloworld
-    url: git+https://github.com/dihaifeng/helm-charts@helloworld?ref=master
-
-releases:
-
-  - name: helloworld
-    chart: helloworld
