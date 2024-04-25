@@ -3,4 +3,4 @@ releases:
 
   - name: helloworld
     chart: ./helloworld
-    installed: false
+    installed: true
