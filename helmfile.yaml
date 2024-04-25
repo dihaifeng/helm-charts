@@ -6,4 +6,4 @@ repositories:
 releases:
 
   - name: helloworld
-    chart: helm-charts/helloworld
+    chart: helloworld
