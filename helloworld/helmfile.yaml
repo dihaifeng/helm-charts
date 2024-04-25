@@ -1,0 +1,22 @@
+---
+repositories:
+  - name: helloworld
+    url: git+https://github.com/dihaifeng/helm-charts@helloworld?ref=master
+---
+environments:
+  default: 
+    values:
+      - values.yaml
+  dev:
+    values:
+      - dev.yaml
+  prod:
+    values:
+      - prod.yaml
+---
+releases:
+  - name: helloworld
+    chart: helm-charts/helloworld
+    installed: true
+    values:
+      - ./{{ .Environment.Name }}.yaml
